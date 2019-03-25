@@ -29,9 +29,7 @@ namespace Bootcamp
         DataTable dataTable;
 
         // variables that store individual data from files
-        private string client_Id;
         private long request_Id;
-        private string name;
         private int quantity;
         private double price;
 
@@ -107,7 +105,6 @@ namespace Bootcamp
                     Path.GetExtension(selectedPathToData) == ".csv" ||
                     Path.GetExtension(selectedPathToData) == ".xml")
                 {
-
                     pathsToAllFiles.Add(selectedPathToData);
                     WritePathToTextBox();
                 }
@@ -614,7 +611,7 @@ namespace Bootcamp
             AddColumnsToReportDataGridView("ClientID", "Average Value Of the Request");
             ReportdataGridView[0, 0].Value = SelectIdtextBox.Text;
             ReportdataGridView[1, 0].Value = double.Parse(data.Where(i => i.Client_Id == SelectIdtextBox.Text).Select(p => p.Price * p.Quantity).Sum().ToString())
-                                           / double.Parse(data.Select(x => x.Request_Id).Distinct().Count().ToString());
+                                           / double.Parse(data.Where(i => i.Client_Id == SelectIdtextBox.Text).Select(x => x.Request_Id).Distinct().Count().ToString());
         }
 
         /// <summary>
@@ -626,7 +623,6 @@ namespace Bootcamp
             AddColumnsToReportDataGridView("Name", "Amount");
 
             temp = 0;
-
             column = 0;
             row = 0;
             IEnumerable<IGrouping<string, RequestDb>> groupedData = data.GroupBy(x => x.Name);
