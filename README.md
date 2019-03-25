@@ -1,12 +1,12 @@
 # ProgramDoObslugiZamowien
 
-Jest to program stworzony w <b>Windows Form App</b>. Aplikacja przyjmuje pliki o rozszerzeniu json, xml oraz csv za pomocą przycisku, który wyświetla okno dialogowe umożliwiające wybór pliku znajdującego się na dysku użytkownika. Dodaną ścieżkę do pliku w każdej chwili można usunąć (w tym celu należy wybrać numer danej ścieżki i wcisnąć odpowiednio opisany przycisk). 
+Jest to program stworzony w <b>Windows Form App</b>. Aplikacja przyjmuje pliki o rozszerzeniu json, xml oraz csv za pomocą przycisku, który wyświetla okno dialogowe umożliwiające wybór pliku znajdującego się na dysku użytkownika. Dodaną ścieżkę do pliku w każdej chwili można usunąć (w tym celu należy wybrać numer danej ścieżki i wcisnąć odpowiednio opisany przycisk, aby usunąć). 
 
 Poprawny plik powinien zawierać pola określające: <br />
 <b>a. ClientId – </b> znaki alfanumeryczne, bez spacji i nie dłuższe niż 6 znaków * <br />
 <b>b. RequestId – </b> znaki numeryczne typu long<br />
-<b>c. Name – </b> znaki alfanumeryczne z możliwymi spacjami, nie dłuższe niż 255 znaków <br />
-<b>d. Quantity – </b> znaki numeryczne typu int *<br />
+<b>c. Name – </b> znaki alfanumeryczne z możliwymi spacjami, nie dłuższe niż 255 znaków *<br />
+<b>d. Quantity – </b> znaki numeryczne typu int <br />
 <b>e. Price – </b> znaki numeryczne zmiennoprzecinkowe podwójnej precyzji<br />
 
 *Dla pliku o rozszerzeniu .csv niedozwolonym znakiem jest symbol ‘,’ (przecinek). Jest on zabroniony ze względu na to, że w owym pliku symbolem rozdzielającym kolejne dane znajdujące się w jednej linii jest właśnie znak ‘,’ (przecinek). W przypadku, gdyby dane również zawierały ‘,’ aplikacja nie byłaby w stanie poprawnie rozdzielić danych znajdujących się w jednej linii.
