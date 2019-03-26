@@ -20,7 +20,7 @@ Na podstawie danych zawartych w wybranym/ch pliku/plikach sporządzany jest rapo
  - <b>b. Ilość zamówień dla klienta o wskazanym identyfikatorze –  </b> ilość unikalnych zamówień dla klienta o identyfikatorze wpisanym przez użytkownika w odpowiednim textBoxie (aplikacja o tym informuje). Raport zwraca jeden wiersz.
   - <b> c. Łączna kwota zamówień - </b> Łączna kwota zamówień – Suma iloczynów Quantity i Price każdego wpisu
   - <b> d. Łączna kwota zamówień dla klienta o wskazanym identyfikatorze – </b> Suma iloczynów Quantity i Price wpisów przypisanych do wskazanego identyfikatora klienta (wpisanego w odpowiednią rubrykę). Raport zwraca jeden wiersz.
-- <b> e. Lista wszystkich zamówień –  </b> lista wszystkich wpisów
+- <b> e. Lista wszystkich zamówień –  </b> lista wszystkich wpisów. Raport zawiera 5 kolumn i 1 lub więcej wierszy
 - <b> f. Lista zamówień dla klienta o wskazanym identyfikatorze –  </b> lista wpisów przypisanych do wskazanego id klienta (id wpisane w odpowiednią rubrykę). Raport zwraca jeden lub więcej wierszy.
 - <b> g. Średnia wartość zamówienia –  </b> Średnia arytmetyczna iloczynów Quantity i Price każdego zamówienia. Raport zwraca jeden wiersz
 - <b> h. Średnia wartość zamówienia dla klienta o wskazanym identyfikatorze – </b>średnia arytmetyczna iloczynów Quantity i Price zamówień przypisanych do wybranego id klienta (id wpisane w odpowiednią rubrykę)
